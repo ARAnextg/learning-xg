@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MAC, RLC, and PDCP Layers &mdash; 5Gdocumentation 0.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=6ca3c713"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="5G Physical Layer" href="learningmodule9.html" />
+    <link rel="prev" title="5G RRC Layer" href="learningmodule7.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            5Gdocumentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html">Starting your learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Learning Modules</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="learningmodule1.html">Overall Basic 5G Network Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule2.html">User Equipment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule3.html">Radio Access Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule4.html">NG-Core Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule7.html">5G RRC Layer</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MAC, RLC, and PDCP Layers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mac-layer">MAC Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functions-of-the-rlc-sublayer">Functions of the RLC Sublayer:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pdcp-layer">PDCP Layer</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule9.html">5G Physical Layer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Experiments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="experiments.html">Get to Know Powder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment.html">“Hello World!” in ARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment2.html">AraRAN Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment3.html">Virtual Network Topology using GENI</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ARA Technical Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ARAoverview.html">ARA Infrastructure Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aboutus.html">About Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">5Gdocumentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">MAC, RLC, and PDCP Layers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/learningmodule8.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mac-rlc-and-pdcp-layers">
+<h1>MAC, RLC, and PDCP Layers<a class="headerlink" href="#mac-rlc-and-pdcp-layers" title="Link to this heading"></a></h1>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading"></a></h2>
+<p>The data link layer provides reliable data transmission between two devices over the radio interface. From here, the layer is divided into sub-layers; the MAC (Medium Access Control) and RLC (Radio Link Control). The MAC sub-layer is designed to provide services to the upper layers and be fed information and services from the previous physical layer. The previous physical layer provides data transfer services, HARQ feedback signaling, scheduling request signaling, etc. It facilitates transfer services for transmitting data over the radio interface.</p>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/learningmodule8Pic1.png" />
+</figure>
+</section>
+<section id="mac-layer">
+<h2>MAC Layer<a class="headerlink" href="#mac-layer" title="Link to this heading"></a></h2>
+<p>The MAC sublayer provides two main services to the upper layers; data transfer and radio resource allocation. As for the operation of the MAC sublayer, we can summarize the operation in a few components. We first start with the data being received from the upper layers of the protocol stack to which the MAC  sublayer will then encapsulate the data with a header that contains the following information:</p>
+<ul class="simple">
+<li><p>Addressing Information</p></li>
+<li><p>Control Information</p></li>
+<li><p>Error Detection Information</p></li>
+</ul>
+<p>The MAC layer will also control the access to the shared communication medium, using media access control methods such as CSMA/CA. The CSMA/CA or Carrier sense multiple access/collision avoidance is a protocol for carrier transmission developed to minimize the possibility of signals collusion over the data link layer.</p>
+<p>The sublayer will provide flow control services to prevent the receiver from being overwhelmed with data. This is done by utilizing techniques such as buffering, windowing, and ACKs (acknowledgments) to control or regulate the “flow” of data.</p>
+<p>Error control mechanics previously mentioned in the physical layer will also be applied here as the CRC and checksums will be utilized to detect and address errors in the data. Afterward, the MAC layer will provide addressing services to ensure that transmitted data is sent to the intended destination and receiver. This can be done using unicast addressing, in which data is sent to a specific destination device identified by its unique MAC address. This is typically done when delivering data to a single device on the network. The data is sent to a group of devices with a common MAC address in multicast addressing. This way, data can be sent to multiple devices on the network simultaneously.</p>
+<p>The RLC (Radio Link Control) sublayer expects the data transfer and notification of transmission opportunities from the lower layer, such as the MAC sublayer.</p>
+</section>
+<section id="functions-of-the-rlc-sublayer">
+<h2>Functions of the RLC Sublayer:<a class="headerlink" href="#functions-of-the-rlc-sublayer" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Transfer of upper layer PDUs: Transmitting data from the protocol stack’s upper layers over the radio link between the transmitter and receiver.</p></li>
+<li><p>Error correction through ARQ: An error-control mechanism that requests the sender to retransmit the data until it is received correctly if an error is detected.</p></li>
+<li><p>Segmentation and re-segmentation of RLC SDUs: The process of dividing a large RLC SDU (Service Data Unit) into smaller RLC PDUs (Protocol Data Units) for transmission over the radio link and then reassembling the smaller RLC PDUs into the original RLC SDU at the receiver.</p></li>
+<li><p>Duplicate detection: A check to ensure that duplicate copies of data are not delivered to upper layers of the protocol stack</p></li>
+<li><p>RLC re-establishment: A procedure used to recover the connection quickly and efficiently to minimize the impact of interruption on the overall performance of the communication system.</p></li>
+</ul>
+<p>While both the MAC and RLC may be located in the data link layer or layer 2, they both have a core objective in their design. The MAC sublayer provides services such as addressing, flow control, and error control to ensure that data is transmitted reliably over the wireless network. The RLC sublayer will optimize transmission over the radio links between two specific devices. This is done through services such as segmentation, reordering, concatenation, error correction, flow control, and acknowledgments.</p>
+</section>
+<section id="pdcp-layer">
+<h2>PDCP Layer<a class="headerlink" href="#pdcp-layer" title="Link to this heading"></a></h2>
+<p>The PDCP (Packet Data Convergence Protocol) layer is another important protocol layer, typically between the RLC and RRC (Radio Resource Control) layers in 5G networks. This layer is responsible for providing header compression, a technique used to reduce the size of protocol headers transmitted over the radio interface by removing redundant information, allowing more data to be transmitted within a given bandwidth.</p>
+<p>It is also responsible for ciphering, as it is used to protect the confidentiality of user data that is transmitted. It involves the encryption of data and is performed on a per-packet basis. This is done to ensure that if one packet is intercepted or compromised, the confidentiality of the remaining packets is still protected.</p>
+<p>And integrity protection is another feature that ensures the authenticity and integrity of user data by preventing various attacks such as message replay, data tampering, etc. The PDCP can be considered as the security measure in 5G wireless communication networks.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="learningmodule7.html" class="btn btn-neutral float-left" title="5G RRC Layer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="learningmodule9.html" class="btn btn-neutral float-right" title="5G Physical Layer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Zachary Miller, Adam Kruger, Danny Cao, Ethan Gabriel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

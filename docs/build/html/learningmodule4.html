@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NG-Core Overview &mdash; 5Gdocumentation 0.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=6ca3c713"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Other Equipment Used to Deploy 5G Networks" href="learningmodule5.html" />
+    <link rel="prev" title="Radio Access Networks" href="learningmodule3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            5Gdocumentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html">Starting your learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Learning Modules</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="learningmodule1.html">Overall Basic 5G Network Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule2.html">User Equipment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule3.html">Radio Access Networks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">NG-Core Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mobile-core-basics">Mobile Core Basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#authentication-ip-connectivity-and-bill-tracking">Authentication, IP Connectivity, and Bill Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#g-technologies-utilized-for-ng-core">5G Technologies Utilized for NG-CORE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quiz">Quiz</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule7.html">5G RRC Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule8.html">MAC, RLC, and PDCP Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule9.html">5G Physical Layer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Experiments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="experiments.html">Get to Know Powder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment.html">“Hello World!” in ARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment2.html">AraRAN Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment3.html">Virtual Network Topology using GENI</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ARA Technical Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ARAoverview.html">ARA Infrastructure Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aboutus.html">About Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">5Gdocumentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">NG-Core Overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/learningmodule4.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ng-core-overview">
+<h1>NG-Core Overview<a class="headerlink" href="#ng-core-overview" title="Link to this heading"></a></h1>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading"></a></h2>
+<p>The next-Generation Core network, or NG-Core, is an important technology for 5G networks. The NG-Core is responsible for managing and routing data traffic. Some of its responsibilities include authentication, IP connectivity, and bill tracking. Another feature includes Network Function Virtualization, or NFV, which improves efficiency. Another name for the NG-Core technology is a 5G Mobile Core.</p>
+</section>
+<section id="mobile-core-basics">
+<h2>Mobile Core Basics<a class="headerlink" href="#mobile-core-basics" title="Link to this heading"></a></h2>
+<ul>
+<li><p>The “User Plane” (UP or UPF) forwards traffic between RAN and the Internet</p></li>
+<li><p>UPF is responsible for policy enforcement, QoS policing, traffic usage statistics, and lawful intercept</p></li>
+<li><p>The majority of the functionality comes from these two:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>AMF (Core Access and Mobility Management Function) - responsible for handling connection and mobility management tasks</p></li>
+<li><p>SMF (Session Management Function) - manages each UE session and takes care of things such as IP address allocation.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Many smaller features need to be shown in the figure, as 3GPP defines a large array of control-related elements that serve to complete smaller tasks.</p></li>
+</ul>
+</section>
+<section id="authentication-ip-connectivity-and-bill-tracking">
+<h2>Authentication, IP Connectivity, and Bill Tracking<a class="headerlink" href="#authentication-ip-connectivity-and-bill-tracking" title="Link to this heading"></a></h2>
+<p>Authentication</p>
+<ul class="simple">
+<li><p>Mobile Core typically uses AKA or Authentication and Key Agreement to authenticate users. A diagram of how AKA works are shown below:</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/AKadiagram.png" />
+</figure>
+<ul class="simple">
+<li><p>AKA provides procedures for mutual authentication of UE and Network</p></li>
+<li><p>Protects against identity theft and fraud</p></li>
+</ul>
+<p>IP Connectivity:</p>
+<ul>
+<li><p>Mobile core capable of using different protocols to assign IP, including:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Internet Protocol (IP)</p></li>
+<li><p>Dynamic Host Configuration Protocol (DHCP)</p></li>
+<li><p>Border Gateway Protocol (BGP)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Ensures the IP address assigned to UE is unique</p></li>
+<li><p>Ensures device with IP assigned can access the internet</p></li>
+</ul>
+<p>Bill Tracking</p>
+<ul>
+<li><p>Various protocols are in place that tracks network usage and bill users.</p></li>
+<li><p>Protocols include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Diameter Protocol - used in LTE and IMS network-side functions. Collects user credentials and sends an access request to the Diameter node, which analyzes information and verifies the authenticity of the user</p></li>
+<li><p>Charging Data Record (CDR) - a formatted collection of information about a chargeable telecommunication event, and these events can be something like making a phone call or using the internet.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="g-technologies-utilized-for-ng-core">
+<h2>5G Technologies Utilized for NG-CORE<a class="headerlink" href="#g-technologies-utilized-for-ng-core" title="Link to this heading"></a></h2>
+<p>Network Function Virtualization, or NFV, is a technology that allows for the virtualization of network functions. This can include processes such as routing, switching, and firewalls. Instead of these processes relying on hardware appliances, they use software-based implementations that run on server hardware. This allows the functions to be more flexible in a real-use environment.</p>
+<p>NFV is a concept that considers the constant changing of what hardware is new and fast and understands that physical hardware can easily become obsolete. Software-based processes can receive updates and changes to keep network services running smoothly.</p>
+<p>NFV works mainly in three parts: Virtualization creates multiple virtual instances of network functions on a single server. SDN (Software-Defined Networking) is also used to automate the configuration and management of our virtualized network functions. Cloud computing is used along with this to provide necessary resources (storage, computing power, networking resources)</p>
+</section>
+<section id="quiz">
+<h2>Quiz<a class="headerlink" href="#quiz" title="Link to this heading"></a></h2>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Module 4 Quiz</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		h1 {
+			margin: 0;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 20px;
+			padding: 20px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.quiz {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px 1px #ccc;
+			margin: 20px;
+			padding: 20px;
+			width: 500px;
+		}
+
+		.question {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.answer {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 10px;
+		}
+
+		.answer label {
+			font-size: 16px;
+			margin-bottom: 5px;
+		}
+
+		.answer input[type="radio"] {
+			margin-right: 10px;
+		}
+
+		.submit-button {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+
+		.submit-button:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form class="quiz" onsubmit="return false;">
+
+			<div class="question">What is the NG-Core responsible for in 5G networks?</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q1" value="a" required>
+					Managing and routing data traffic
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q1" value="b">
+					Providing high-speed internet
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q1" value="c">
+					Managing base stations
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q1" value="d">
+					Handling authentication for users
+				</label>
+			</div>
+
+			<div class="question">What is the responsibility of the UPF in the mobile core?</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q2" value="a" required>
+					Authentication
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q2" value="b">
+					IP connectivity
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q2" value="c">
+					Policy enforcement
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q2" value="d">
+					Connection and mobility management
+				</label>
+			</div>
+
+			<div class="question">What are the two main functionalities of the NG-Core technology?</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q3" value="a" required>
+					Authentication and billing
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q3" value="b">
+					Session management and mobility management
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q3" value="c">
+					IP connectivity and policy enforcement
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q3" value="d">
+					Network function virtualization and QoS policing
+				</label>
+			</div>
+
+			<div class="question">
+				What is the purpose of beamforming technology in 5G?
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q4" value="a" required>
+					To manage resources in base stations
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q4" value="b">
+					To decode signals from the UE
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q4" value="c">
+					To improve security when transmitting data
+				</label>
+			</div>
+			<div class="answer">
+				<label>
+					<input type="radio" name="q4" value="d">
+					To direct signals to the UE
+				</label>
+			</div>
+			<button class="submit-button" onclick="submitQuiz()">Submit</button>
+		</form>
+	</div>
+	<script>
+
+function submitQuiz() {
+			let q1 = document.querySelector('input[name="q1"]:checked').value;
+			let q2 = document.querySelector('input[name="q2"]:checked').value;
+			let q3 = document.querySelector('input[name="q3"]:checked').value;
+			let q4 = document.querySelector('input[name="q4"]:checked').value;
+
+			let correctAnswers = ["a", "c", "b", "d"];
+			let score = 0;
+			if (q1 === correctAnswers[0]) {
+				score++;
+			}
+			if (q2 === correctAnswers[1]) {
+				score++;
+			}
+			if (q3 === correctAnswers[2]) {
+				score++;
+			}
+			if (q4 === correctAnswers[3]) {
+				score++;
+			}
+			alert(`You scored ${score} out of ${correctAnswers.length}`);
+		}
+	</script>
+</body>
+</html></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="learningmodule3.html" class="btn btn-neutral float-left" title="Radio Access Networks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="learningmodule5.html" class="btn btn-neutral float-right" title="Other Equipment Used to Deploy 5G Networks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Zachary Miller, Adam Kruger, Danny Cao, Ethan Gabriel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

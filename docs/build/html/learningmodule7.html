@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5G RRC Layer &mdash; 5Gdocumentation 0.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=6ca3c713"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="MAC, RLC, and PDCP Layers" href="learningmodule8.html" />
+    <link rel="prev" title="5G Networking in Rural Locations" href="learningmodule6.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            5Gdocumentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html">Starting your learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Learning Modules</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="learningmodule1.html">Overall Basic 5G Network Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule2.html">User Equipment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule3.html">Radio Access Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule4.html">NG-Core Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5G RRC Layer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#abstract">Abstract</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functions-of-5g-rrc-layer">Functions of 5G RRC Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#g-nr-rrc-states">5G NR RRC States</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule8.html">MAC, RLC, and PDCP Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule9.html">5G Physical Layer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Experiments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="experiments.html">Get to Know Powder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment.html">“Hello World!” in ARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment2.html">AraRAN Experiments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment3.html">Virtual Network Topology using GENI</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ARA Technical Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ARAoverview.html">ARA Infrastructure Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aboutus.html">About Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">5Gdocumentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">5G RRC Layer</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/learningmodule7.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="g-rrc-layer">
+<h1>5G RRC Layer<a class="headerlink" href="#g-rrc-layer" title="Link to this heading"></a></h1>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading"></a></h2>
+<p>The 5G RRC (Radio Resource Control) layer is an essential component of the 5G network architecture and protocols that facilitates communications between the UEs and the radio access network. The RRC layer operates in the control plane, ensuring efficient utilization of radio resources by allocating frequency, bandwidth, and power for the user equipment. It works with the user plane to ensure data is transmitted between the UE and the RAN efficiently and securely. It provides signaling and control functions, while the UP handles the data transmission. Together, the RRC layer and the UP ensure that the data is transmitted with the appropriate Quality of Service (QoS) and security level. The primary functions of the 5G RRC layer are critical to the performance of 5G networks.</p>
+</section>
+<section id="functions-of-5g-rrc-layer">
+<h2>Functions of 5G RRC Layer<a class="headerlink" href="#functions-of-5g-rrc-layer" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>UE measurement reporting: UEs have the ability to measure the signal strength of neighboring cells; the RRC layer uses this information to decide which cell or base station the UE should connect to.</p></li>
+<li><p>Key management security: Ensures communication between the UEs and the network is protected from unauthorized access.</p></li>
+<li><p>Broadcasting system information to NAS: RRC layer can send system information to the network access stratum (NAS) about details regarding available radio resources, system parameters, and other network-related information</p></li>
+<li><p>Quality of service management: RRC layer is also responsible for managing the quality of service management, which ensures that UEs receive the appropriate level of service based on their traffic requirements and network conditions.</p></li>
+<li><p>Radio resource allocation and control: The RRC layer has the responsibility of allocating radio resources to UEs based on their traffic requirements and network conditions</p></li>
+<li><p>Mobility functions along with cell addition and release: This function allows UEs to always be connected to the most suitable cell, and that handover between cells is a seamless process and won’t result in a network drop while doing so.</p></li>
+</ul>
+</section>
+<section id="g-nr-rrc-states">
+<h2>5G NR RRC States<a class="headerlink" href="#g-nr-rrc-states" title="Link to this heading"></a></h2>
+<p>The 5G NR RRC states are the different operational states a UE can be in based on its connection status with the network. These states are defined in the 5G NR standard and are critical in managing the radio resources allocated to the UE. There are three main RRC states in the 5G NR protocol, as shown in the figure.</p>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/LearningModule7picture.png" />
+</figure>
+<p>RRC_IDLE: The UE is not connected to the network and is in an idle state. During this state, the UE is not assigned any radio resources and is not actively communicating with the network. The UE will still, however, scan periodically for available cells to establish a connection.</p>
+<p>Some actions the UE performs while in RRC idle mode include selecting public land mobile networks to connect to. It also performs the function of cell re-selection mobility. As explained above, it re-evaluates available cells and decides whether to swap to a new cell based on signal strength, quality, and mobility.</p>
+<p>RRC_INACTIVE: The UE is connected to the network, but no data is transmitted or exchanged between the UE and the network. During this state, the UE maintains a connection with the network, but no radio resources are allocated.</p>
+<p>Like the idle state, this state also performs cell re-selection mobility functionality. 5GC to NG-RAN connection is established for the UE during this state. This connection includes both the control and user planes. RAN paging also occurs in this state and is needed if the network needs to send data to the UE while it is in RRC inactive mode, to which the paging procedure wakes up the UE and establishes a connection.</p>
+<p>RRC_CONNECTED: The UE is connected to the network, and data is transmitted or exchanged between the UE and the network. The UE is assigned radio resources during this state for the connection duration.</p>
+<p>Finally, for the RRC connected state, it’s here in this state where transfer of unicast data to/from the UE occurs in which the data is transmitted from the network to a specific UE, or from a specific UE to the network. The data being transmitted can include user data or control messages.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="learningmodule6.html" class="btn btn-neutral float-left" title="5G Networking in Rural Locations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="learningmodule8.html" class="btn btn-neutral float-right" title="MAC, RLC, and PDCP Layers" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Zachary Miller, Adam Kruger, Danny Cao, Ethan Gabriel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

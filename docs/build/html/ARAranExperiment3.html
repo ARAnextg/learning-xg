@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Network Topology using GENI &mdash; 5Gdocumentation 0.01 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=6ca3c713"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="ARA Infrastructure Overview" href="ARAoverview.html" />
+    <link rel="prev" title="AraRAN Experiments" href="ARAranExperiment2.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            5Gdocumentation
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Getting Started!</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="beforeyoubegin.html">Starting your learning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Learning Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule1.html">Overall Basic 5G Network Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule2.html">User Equipment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule3.html">Radio Access Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule4.html">NG-Core Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule5.html">Other Equipment Used to Deploy 5G Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule6.html">5G Networking in Rural Locations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule7.html">5G RRC Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule8.html">MAC, RLC, and PDCP Layers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="learningmodule9.html">5G Physical Layer</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Experiments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="experiments.html">Get to Know Powder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment.html">“Hello World!” in ARA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ARAranExperiment2.html">AraRAN Experiments</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Virtual Network Topology using GENI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#detailed-steps-for-the-experiment">Detailed Steps for the Experiment:</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">ARA Technical Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ARAoverview.html">ARA Infrastructure Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About Us</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="aboutus.html">About Us</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">5Gdocumentation</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Virtual Network Topology using GENI</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ARAranExperiment3.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="virtual-network-topology-using-geni">
+<h1>Virtual Network Topology using GENI<a class="headerlink" href="#virtual-network-topology-using-geni" title="Link to this heading"></a></h1>
+<p>Platform: GENI
+Resources Required: Account with GENI, Terminal capable of SSH.</p>
+<p>Experiment Description: The experiment demonstrates creating a virtual network topology and testing its connection using a terminal. The virtual network topology experiment utilizes the tools available on the GENI website and allows us to connect two virtual machines on a network and test that network connection by using ssh to login to one of our nodes where we can run commands.</p>
+<section id="detailed-steps-for-the-experiment">
+<h2>Detailed Steps for the Experiment:<a class="headerlink" href="#detailed-steps-for-the-experiment" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Open a web browser and navigate to portal.geni.net</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni1.png" />
+</figure>
+<ul class="simple">
+<li><p>Login to the website (This may require login through an institution with access to GENI)</p></li>
+<li><p>On this page hit <strong>New slice</strong>. On the following screen fill out your slice name and slice description with relevant information.</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni2.png" />
+</figure>
+<ul class="simple">
+<li><p>Once your slice has been created you will be navigated to the resources page for your slice. Now we will populate the slice with our virtual network topology. Go ahead and click <strong>Add Resources</strong> to get started.</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni3.png" />
+</figure>
+<ul class="simple">
+<li><p>After this you should see this workspace open up, which we will use to create our experiment:</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni4.png" />
+</figure>
+<p><strong>Workspace instructions:</strong></p>
+<ol class="arabic simple">
+<li><p>Drag two <strong>Xen VM</strong> nodes onto the dashboard.</p></li>
+<li><p>Click into each node, and name one of them <strong>Node1</strong> and one as <strong>Node2</strong> respectively. These of course do not have to be named as such.</p></li>
+<li><p>Make sure each node has the Node Type: <strong>emulab-xen</strong></p></li>
+<li><p>Click and drag from the edge of Node1 and connect the line to Node2, letting go of the left click when hovering over Node2.</p></li>
+<li><p>Click on the link node which was just created and change the name to <strong>Link1</strong></p></li>
+<li><p>Make sure the Link Type is set to Ethernet.</p></li>
+<li><p>Note that you could set up interface information on each of the nodes (including name, bandwidth, IP, and Netmask) if you wanted to, but for this experiment it will not be required.</p></li>
+</ol>
+<p><strong>When this is all done it should look something like this:</strong></p>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni5.png" />
+</figure>
+<ul class="simple">
+<li><p>Now you will need to click on Site 1 and setup a site with which you will setup these resources. You can choose any instaGENI that has a green check. For this example we will use <strong>Ohio State University InstaGENI</strong></p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni6.png" />
+</figure>
+<ul class="simple">
+<li><p>Next, Near the top right corner, click on your name and choose the option <strong>SSH Keys</strong>. Click the option <strong>generate and download an SSH keypair</strong></p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni7.png" />
+</figure>
+<ul class="simple">
+<li><p>On the next screen you will need to setup a passphrase for this SSH key. This passphrase will need to be memorized as it will be used each time you SSH into a machine to verify that it is your own private key.</p></li>
+</ul>
+<p>Download your Private Key once you have one generated.</p>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni8.png" />
+</figure>
+<ul class="simple">
+<li><p>Next you will need to setup your SSH key to be used in the experiment.</p></li>
+</ul>
+<p>Open a terminal and do the following:</p>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni9.png" />
+</figure>
+<ul class="simple">
+<li><p>After this, re-open your browser which is on the GENI website</p></li>
+</ul>
+<p>Hover over <strong>Home</strong> on the top Toolbar and then click <strong>Slices</strong>
+Next, click into the slice which you create</p>
+<ul class="simple">
+<li><p>On this page, click on <strong>Details</strong> located under the <strong>Manage Resources</strong> block.</p></li>
+<li><p>This page will contain information about our Nodes, including the hostname, status, and login information.</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni10.png" />
+</figure>
+<ul class="simple">
+<li><p>Using this information, open a terminal and ssh into Node1. Your ssh command should look like the following:</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni11.png" />
+</figure>
+<ul class="simple">
+<li><p>If done correctly, you should have a prompt to put in your ssh passphrase that you setup earlier. Your new command terminal should look like this:</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni12.png" />
+</figure>
+<ul class="simple">
+<li><p>Once you have gotten into node1, run the following command:</p></li>
+</ul>
+<figure class="align-center">
+<img alt="5Gdocumentation" src="_images/geni13.png" />
+</figure>
+<ul class="simple">
+<li><p>If the network is set up correctly, you should be able to see successful ping results here with real data about the connection types.</p></li>
+</ul>
+<p>From these pings results - is there anything else you can see which was configured earlier in this lab? (hint: look at the connection type)</p>
+<p>Congratulations - you have successfully setup a basic experiment using GENI software!</p>
+<p>While 5G experiments can be conducted on this site, doing so with the tools available at this time is not easily done. This experiment is more guided towards getting users familiar with the software, and we hope more accessible experiments will become available in the near future.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ARAranExperiment2.html" class="btn btn-neutral float-left" title="AraRAN Experiments" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ARAoverview.html" class="btn btn-neutral float-right" title="ARA Infrastructure Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Zachary Miller, Adam Kruger, Danny Cao, Ethan Gabriel.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
